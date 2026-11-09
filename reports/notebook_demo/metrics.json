@@ -1,0 +1,110 @@
+{
+  "dataset_source": "SYNTHETIC DEMO \u2014 NOT EMPIRICAL EVIDENCE",
+  "synthetic_demo": true,
+  "generated_at_utc": "2026-11-09T18:25:07.700584+00:00",
+  "total_records": 1600,
+  "feature_count_pre_engineering": 19,
+  "excluded_fields": [
+    "duration",
+    "y"
+  ],
+  "chronological_split": {
+    "train_rows": 960,
+    "validation_rows": 320,
+    "test_rows": 320,
+    "train_positive_rate": 0.10520833333333333,
+    "validation_positive_rate": 0.084375,
+    "test_positive_rate": 0.08125
+  },
+  "model_selection": "Highest validation average precision; no test-set tuning",
+  "champion": "random_forest",
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "samples": 320,
+        "positive_count": 27,
+        "positive_rate": 0.084375,
+        "roc_auc": 0.534698521046644,
+        "average_precision": 0.10463494986592524,
+        "brier_score": 0.08066900828225972,
+        "log_loss": 0.30251697323209525,
+        "top_k": {
+          "capacity_fraction": 0.2,
+          "contacts": 64,
+          "observed_subscriptions": 5,
+          "precision_at_k": 0.078125,
+          "recall_at_k": 0.18518518518518517,
+          "lift_at_k": 0.9259259259259258,
+          "random_expected_subscriptions": 5.4,
+          "predicted_subscriptions": 12.284307933980148
+        }
+      },
+      "test": {
+        "samples": 320,
+        "positive_count": 26,
+        "positive_rate": 0.08125,
+        "roc_auc": 0.532051282051282,
+        "average_precision": 0.11998746759553797,
+        "brier_score": 0.07656252266564026,
+        "log_loss": 0.2915492796012302,
+        "top_k": {
+          "capacity_fraction": 0.2,
+          "contacts": 64,
+          "observed_subscriptions": 9,
+          "precision_at_k": 0.140625,
+          "recall_at_k": 0.34615384615384615,
+          "lift_at_k": 1.7307692307692306,
+          "random_expected_subscriptions": 5.2,
+          "predicted_subscriptions": 12.500277738339804
+        }
+      }
+    },
+    "random_forest": {
+      "validation": {
+        "samples": 320,
+        "positive_count": 27,
+        "positive_rate": 0.084375,
+        "roc_auc": 0.5247124257363165,
+        "average_precision": 0.10651337064220637,
+        "brier_score": 0.08046548514414441,
+        "log_loss": 0.3029117479875853,
+        "top_k": {
+          "capacity_fraction": 0.2,
+          "contacts": 64,
+          "observed_subscriptions": 6,
+          "precision_at_k": 0.09375,
+          "recall_at_k": 0.2222222222222222,
+          "lift_at_k": 1.111111111111111,
+          "random_expected_subscriptions": 5.4,
+          "predicted_subscriptions": 12.701252368406012
+        }
+      },
+      "test": {
+        "samples": 320,
+        "positive_count": 26,
+        "positive_rate": 0.08125,
+        "roc_auc": 0.5690737833594977,
+        "average_precision": 0.12150561308282541,
+        "brier_score": 0.0782203518011082,
+        "log_loss": 0.29601017839941157,
+        "top_k": {
+          "capacity_fraction": 0.2,
+          "contacts": 64,
+          "observed_subscriptions": 8,
+          "precision_at_k": 0.125,
+          "recall_at_k": 0.3076923076923077,
+          "lift_at_k": 1.5384615384615383,
+          "random_expected_subscriptions": 5.2,
+          "predicted_subscriptions": 13.346117026712047
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Historical contact data (2008\u20132010); does not establish current market behaviour.",
+    "Client identifiers are unavailable; repeated-client dependence cannot be removed.",
+    "Predicting subscription among contacted clients is not estimating incremental campaign uplift.",
+    "Macro indicators and historical regime may drift in deployment.",
+    "Costs and value inputs in the dashboard are user-supplied hypothetical assumptions."
+  ]
+}

@@ -1,0 +1,2 @@
+# For Streamlit Community Cloud or a simple pip install:
+-e .[app]

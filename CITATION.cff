@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the repository and the UCI Bank Marketing dataset separately."
+title: "Bank Marketing Decision Lab"
+version: 0.1.0
+authors:
+  - family-names: Cao
+    given-names: Jinlei
+repository-code: "https://github.com/jinlei-cao/bank-marketing-decision-lab"
+license: MIT
