@@ -100,24 +100,3 @@ python -m pytest
 ```
 
 GitHub Actions runs tests without any internet download, using deterministic synthetic fixtures. Academic results need a separate, documented run of the real dataset.
-
-## Suggested GitHub publishing steps
-
-1. Sign into [jinlei-cao](https://github.com/jinlei-cao), select **New repository** and name it `bank-marketing-decision-lab`.
-2. Select **Public**, do not auto-create another README, then create the repository.
-3. Extract this ZIP and upload its project files to the new repository (or use the Git CLI instructions below).
-4. On the repository page, confirm the automated test workflow is passing.
-5. Run the UCI analysis locally and check results before writing empirical findings in the public README.
-
-```bash
-git init
-git add .
-git commit -m "Initial reproducible bank marketing research toolkit"
-git branch -M main
-git remote add origin https://github.com/jinlei-cao/bank-marketing-decision-lab.git
-git push -u origin main
-```
-
-**Privacy:** Use GitHub's private/noreply commit email if desired. No contact email or personal identifiers are embedded in this repository.
-
-**Disclosure:** The v0.1 code scaffold was developed with AI assistance; the researcher should review and rerun it, understand the analysis and verify every reported conclusion before using it as evidence of personal research competence.
