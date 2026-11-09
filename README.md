@@ -85,18 +85,8 @@ The 41,188-record, 20-input `bank-additional-full.csv` is from Portuguese bank c
 
 Read [METHODOLOGY.md](docs/METHODOLOGY.md) for methods, modelling risks, privacy and limitations. This project is for research/education, not real credit or consumer targeting decisions.
 
-## Data source and academic citation (APA 7)
+## Data source and academic citation
 
 Moro, S., Rita, P., & Cortez, P. (2014). *Bank Marketing* [Data set]. UCI Machine Learning Repository. https://doi.org/10.24432/C5K306
 
 Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. *Decision Support Systems, 62*, 22–31. https://doi.org/10.1016/j.dss.2014.03.001
-
-The UCI dataset is licensed under **CC BY 4.0** (attribution required). This repository's code is **MIT licensed**. Data are downloaded directly from UCI and excluded from source commits.
-
-## Tests and research reproducibility
-
-```bash
-python -m pytest
-```
-
-GitHub Actions runs tests without any internet download, using deterministic synthetic fixtures. Academic results need a separate, documented run of the real dataset.
